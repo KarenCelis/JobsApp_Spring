@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+<h1 th:text="${mensaje}"></h1>
+-- Otra forma de renderizar
+<h2>Hoy es [[${fecha}]]</h2>
+ -->
+ <h1>Bienvenido</h1>
+ <h2>Oferta de trabajo</h2>
+ <h3 th:text="'Titulo: ' + ${nombre}"></h3>
+  <h3 th:text="'Fecha Publicacion: ' + ${fecha}"></h3>
+   <h3 th:text="'Salario: ' + ${salario}"></h3>
+    <h3 th:text="'Estado: ' + ${vigente}"></h3>
+
+</body>
+</html>
